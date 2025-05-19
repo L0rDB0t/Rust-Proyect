@@ -1,10 +1,10 @@
-# Token Timelock Vault
+# TOKEN TIMELOCK VAULT
 
 Solana Anchor Smart Contract para bloquear tokens SPL a favor de un beneficiario hasta una fecha futura específica. Ideal para vesting, airdrops programados o seguros de custodia.
 
 ---
 
-## 🚀 ¿Qué hace este contrato?
+## 🚀 ¿QUÉ HACE ESTE CONTRATO?
 
 - Permite al owner inicializar un "vault" con tokens SPL que solo podrán ser retirados por el beneficiario después de cierta fecha (`release_time`).
 - El beneficiario puede liberar los tokens una sola vez, después de cumplido el tiempo.
@@ -12,7 +12,7 @@ Solana Anchor Smart Contract para bloquear tokens SPL a favor de un beneficiario
 
 ---
 
-## 📦 Instalación y compilación
+## 📦 INSTALACIÓN Y COMPILACIÓN
 
 1. Instala Rust, Anchor y Solana CLI.
 2. Clona este repo:
@@ -27,16 +27,16 @@ Solana Anchor Smart Contract para bloquear tokens SPL a favor de un beneficiario
 
 ---
 
-## ⚙️ Uso
+## ⚙️ USO
 
-1. **Inicializar Vault:**
-   - El owner transfiere tokens SPL al vault especificando beneficiario y fecha.
-2. **Liberar tokens:**
-   - El beneficiario llama a `release` después de la fecha límite.
+1. **Inicializar Vault:**  
+   El owner transfiere tokens SPL al vault especificando beneficiario y fecha.
+2. **Liberar tokens:**  
+   El beneficiario llama a `release` después de la fecha límite.
 
 ---
 
-## 🧑‍💻 Estructura de archivos
+## 🧑‍💻 ESTRUCTURA DE ARCHIVOS
 
 - `programs/token_timelock_vault/src/lib.rs`: Contrato principal.
 - `AUDITORIA.md`: Auditoría de seguridad y recomendaciones.
@@ -44,13 +44,13 @@ Solana Anchor Smart Contract para bloquear tokens SPL a favor de un beneficiario
 
 ---
 
-## 🛡️ Seguridad y Auditoría
+## 🛡️ SEGURIDAD Y AUDITORÍA
 
 Consulta `AUDITORIA.md` para ver el análisis de riesgos, recomendaciones y pruebas sugeridas.
 
 ---
 
-## 📝 Licencia
+## 📝 LICENCIA
 
 MIT
 
