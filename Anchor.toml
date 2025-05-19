@@ -7,6 +7,9 @@ skip-lint = false
 [programs.localnet]
 token_timelock_vault = "AHuxcfexoU55eDhM8V5jk2U6ZJocjHVn8H5Y1RYm5qSC"
 
+[toolchain]
+anchor_version = "0.31.1"
+
 [registry]
 url = "https://api.apr.dev"
 

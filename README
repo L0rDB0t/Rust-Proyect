@@ -1,0 +1,28 @@
+# Auditoría de Token Time Lock Vault
+
+## Resumen
+
+Este contrato permite bloquear tokens SPL a favor de un beneficiario hasta una fecha futura específica.
+
+## Puntos auditados
+
+- Sólo el beneficiario puede liberar los tokens.
+- Los tokens no pueden liberarse antes del tiempo configurado.
+- El contrato sólo permite liberar tokens una vez.
+- No hay funciones que permitan retirar tokens por el owner original después de initialized.
+
+## Recomendaciones
+
+- Considerar agregar eventos para mayor trazabilidad.
+- Validar exhaustivamente las constraints de las cuentas al inicializar.
+
+## Riesgos potenciales
+
+- Si el beneficiario pierde la clave, los tokens quedan bloqueados para siempre.
+- La cuenta Vault debe estar bien protegida; si se pierde su PDA, los fondos quedan inaccesibles.
+
+## Test sugeridos
+
+- Intentar liberar antes del tiempo.
+- Intentar liberar dos veces.
+- Verificar el saldo antes y después de la liberación.
