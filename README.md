@@ -50,9 +50,9 @@ Consulta `AUDITORIA.md` para ver el análisis de riesgos, recomendaciones y prue
 
 ---
 
-## 📝 LICENCIA
+## 📝 ID DEL CONTRATO
 
-MIT
+"AHuxcfexoU55eDhM8V5jk2U6ZJocjHVn8H5Y1RYm5qSC"
 
 ---
 
